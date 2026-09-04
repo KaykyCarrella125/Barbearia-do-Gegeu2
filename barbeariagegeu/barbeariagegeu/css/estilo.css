@@ -1,0 +1,118 @@
+:root{
+    --amarelomijo: #F2C849;
+    --brancomelado: #F7F6E1;
+    --marromcoco: #8C5E26;
+    --marromfraco: #BF843B;
+    --pretoescuro: linear-gradient(to bottom, #000000, #292111, #b48b02);
+}
+
+@font-face {
+    font-family: barbearia;
+    src: url(/barbeariagegeu/fonts/Marinero\ Tatuado.ttf);
+}
+
+
+h1{
+    font-size: 80px;
+    text-align: center;
+    color: var(--amarelomijo);
+    font-family: barbearia;
+}
+
+h2{
+    font-size: 38px;
+    text-align: center;
+    color: var(--marromcoco);
+    font-family: barbearia;
+}
+
+h3{
+    font-size: 35px;
+    text-align: center;
+    color: var(--marromfraco);
+    font-family: barbearia;
+}
+
+h4{
+    font-size: 35px;
+    text-align: center;
+    color: var(--marromfraco);
+    font-family: barbearia;
+}
+
+h5{
+    font-size: 35px;
+    text-align: center;
+    color: var(--marromfraco);
+    font-family: barbearia;
+}
+
+h6{
+    font-size: 35px;
+    text-align: center;
+    color: var(--marromfraco);
+    font-family: barbearia;
+}
+
+hr{
+    width: 70%;
+    height: 10px;
+    background: var(--brancomelado);
+    margin-top: 25px;
+}
+
+p{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+img{
+    height: 205px;
+    border-radius: 10px;
+    filter: blur(3px)grayscale(100%);
+    &:hover{
+        transition: 0.7s;
+        filter: blur(0px)grayscale(0%);
+        transform: scale(1.1);
+    }
+    margin: 20px;
+}
+
+.logo{
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    width: 170px;
+    height: 170px;
+    margin: 0;
+    border-radius: 10px;
+    filter: none;
+    object-fit: cover;
+}
+
+.Caixa{
+    text-align: center;
+
+}
+
+body{
+    background: var(--pretoescuro);
+}
+
+video{
+    width: 70%;
+    margin: auto;
+    display: block;
+}
+
+@media (max-width: 700px){
+    .logo{
+        width: 75px;
+        height: 75px;
+        top: 10px;
+        left: 10px;
+    }
+}
